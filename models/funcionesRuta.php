@@ -41,4 +41,17 @@
 		cerrarConexion();
 		return $response;
 	}
+	
+	function insertarRuta($idempresa,$nombre,$tarifa)
+	{
+		$response = 0;
+		$conexion = abrirConexion();
+		$query = "CALL SP_InsertaRuta('$idempresa','$nombre','$tarifa')";
+		$result = mysqli_query($conexion,$query) or die(mysqli_error());
+		$response = mysqli_insert_id();
+		cerrarConexion();
+		return $response;
+	}
+	
+
 ?>

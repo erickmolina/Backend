@@ -1,43 +1,43 @@
-<?php
-?>
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>BusStation</title>
+<title>Free Steam Website Template | Pricing :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href=" views/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
-<link href=" views/css/calendar-eightysix-default.css" rel="stylesheet" type="text/css" media="all" />
-<link href=" views/css/calendar-eightysix-osx-dashboard.css" rel="stylesheet" type="text/css" media="all" />
-<link href=" views/css/calendar-eightysix-vista.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src=" views/js/mootools-1.2.4-core.js"></script>
-<script type="text/javascript" src=" views/js/mootools-1.2.4.2-more.js"></script>
-<script type="text/javascript" src=" views/js/calendar-eightysix-v1.0.1.js"></script>
+<script src="s/jquery.min.js"></script>
 <script type="text/javascript">
-		window.addEvent('domready', function() {
-			new CalendarEightysix('exampleI', 	 { 'offsetY': -4 });
-			new CalendarEightysix('exampleII', 	 { 'startMonday': true, 'format': '%m.%d.%Y', 'slideTransition': Fx.Transitions.Back.easeOut, 'draggable': true, 'offsetY': -4 });
-	});	
-</script>
-
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+		</script>
 </head>
 <body>
-  <div class="header-top">
+ <div class="header-top">
 	<div class="wrap">
         <div class="logo">
-			<a href="index.php"><img src=" views/images/logo.png" alt=""/></a>
+			<a href="../index.php"><img src=" images/logo.png" alt=""/></a>
 		</div>
 		<div class="cssmenu">
 		  <nav id="nav" role="navigation">
 			<a href="#nav" title="Show navigation">Show navigation</a>
 			<a href="#" title="Hide navigation">Hide navigation</a>
 			<ul class="clearfix">
-				<li class="active"><a href="index.php">Home</a></li>
-				<li><a href="views/start.php"><span>Descarga</span></a></li>
-				<li><a href="views/work.php"><span>Información</span></a></li>
-				<li><a href="views/support.php">Contacto</a></li>
+				<li ><a href="../index.php">Home</a></li>
+				<li ><a href="start.php"><span>Descarga</span></a></li>
+				<li class="active"><a href="work.php"><span>Información</span></a></li>
+				<li><a href="support.php">Contacto</a></li>
 				<div class="clear"></div>
 			</ul>
 		    </nav>
@@ -51,11 +51,7 @@
 					<a href="views/login.php">Iniciar Sesiòn</a>
 				</div>
 			</div>		
-				
-				
-				
-				
-		   </div>
+		 </div>
 		   <!--Parte del login-->
 		   
 		   
@@ -63,23 +59,24 @@
 		<h2 class="head">Aplicación para <span class="m_1"> </span>encontrar <span class="m_1">tu mejor ruta</span></h2>
      </div>
     </div>
-     
-	 <!--Imagen del mapa opcional-->
-	 <div class="map">
-     	<img src=" views/images/map.jpg" alt=""/>
+    <div class="main">
+     	<div class="wrap">
+     		<h2 class="head1">Acerca del proyecto</h2>
+     		<p class="m_5">Se crea este sitio y la apkicación para mejorar el servicio público haciendo más comodo la información, así como interactuar con la empresa</p>
+     		<section>
+				
+			</section>
+     	</div>
      </div>
-	 <!--Imagen del mapa opcional-->
-	 
-
-
-     <div class="footer">
+    </div>
+       <div class="footer">
      	<div class="wrap">
      	  <div class="footer-menu">
      		<ul>
-				<li class="active"><a href="index.php">Home</a></li> 
-				<li><a href="views/start.php">Descarga</a></li> 
-				<li><a href="views/work.php">Informacion</a></li> 
-				<li><a href="views/support.php">Contacto</a></li> 
+				<li class="active"><a href="../index.php">Home</a></li> 
+				<li><a href="start.php">Descarga</a></li> 
+				<li><a href="work.php">Informacion</a></li> 
+				<li><a href="support.php">Contacto</a></li> 
 				
 				<div class="clear"></div>
 			</ul>
