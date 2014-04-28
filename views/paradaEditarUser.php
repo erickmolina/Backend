@@ -1,4 +1,7 @@
-
+<?php
+	include '../controllers/sesion.php';
+	check_loginEmpresa();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -71,6 +74,16 @@
 								<option value="AF">Ejemplo2</option>
 							</select>
 					    </p>
+						
+						<p id="nombre">
+					      <label for="modlgn_username">Información</label>
+					      <input id="modlgn_informacion" type="text" name="informacion" class="inputbox" size="18" autocomplete="off">
+					    </p>
+						 
+						<p id="nombre">
+					      <label for="modlgn_username">Detalle</label>
+					      <input id="modlgn_lingitud" type="text" name="detalle" class="inputbox" size="18" autocomplete="off">
+					    </p>
 						<p id="nombre">
 					      <label for="modlgn_username">Longitud</label>
 					      <input id="modlgn_lingitud" type="text" name="longitud" class="inputbox" size="18" autocomplete="off">
@@ -81,14 +94,6 @@
 					      <input id="modlgn_latitud" type="text" name="latitud" class="inputbox" size="18" autocomplete="off">
 					    </p>
 						
-						<p id="telefono">
-					      <label for="modlgn_username">Información</label>
-					      <input id="modlgn_informacion" type="text" name="informacion" class="inputbox" size="18" autocomplete="off">
-					    </p>
-						
-						
-					   
-					    
 					    <input type="submit" name="Submit"  value="Editar">
 					  </fieldset>
 					 </form>

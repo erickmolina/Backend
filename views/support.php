@@ -1,23 +1,15 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Free Steam Website Template | Support :: w3layouts</title>
+<title>Support</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 </head>
-<body>
-     
-	 
-	  <div class="header-top">
+<body> 
+	<div class="header-top">
 	<div class="wrap">
         <div class="logo">
 			<a href="../index.php"><img src=" images/logo.png" alt=""/></a>
@@ -41,7 +33,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		  <div class="content-box-right">
 				
 				<div class="get_btn">
-					<a href="views/login.php">Iniciar Sesiòn</a>
+					<a href="login.php">Iniciar Sesiòn</a>
 				</div>
 			</div>		
 		 </div>
@@ -81,12 +73,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					      <label for="modlgn_username">Correo</label>
 					      <input id="modlgn_email" type="email" name="correo" placeholder="me@example.com" class="inputbox" size="18" autocomplete="off">
 					    </p>
-						
-						
-						
-						
-					   
-					    
 					    <input type="submit" name="Submit"  value="Enviar">
 					  </fieldset>
 					 </form>

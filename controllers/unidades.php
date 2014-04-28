@@ -1,10 +1,16 @@
 <?php
 	require_once '../models/funcionesUnidad.php';
-	//include ("funcionesUnidad.php");
 	
-	if(isset($_GET['tag']) && ($_GET['tag'] == 'obtenerUnidades'))
+	if(isset($_GET['tag']) && ($_GET['tag'] == 'obtenerUnidadesRuta'))
 	{	
-		$response = obtenerUnidades($_GET['Nombre_Ruta']);
+		$response = obtenerUnidadesRuta($_GET['Nombre_Ruta']);
+		echo json_encode($response);
+		
+	}
+	
+	if(isset($_GET['tag']) && ($_GET['tag'] == 'getAllUnidades'))
+	{	
+		$response = getAllUnidades();
 		echo json_encode($response);
 		
 	}

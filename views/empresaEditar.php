@@ -1,8 +1,6 @@
 <?php
-	include '../controllers/empresas.php';
 	include '../controllers/sesion.php';
 	check_login();
-	$listaempresas = listaEmpresas();
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -13,20 +11,12 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+<script src="js/jquery-1.7.2.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/empresas.js"></script>
 </head>
 <body>
-<script type='text/javascript'>
 
-function ActualizarCampos() 
-{ 
-	
-	var idempresa = document.getElementById('lempresa').value;
-	var write = <?
-		$id = idempresa;
-		echo cargarDatosEmpresa($id) ?>
-}
-
-</script>
  <div class="header-top">
 	<div class="wrap">
         <div class="logo">
@@ -69,24 +59,27 @@ function ActualizarCampos()
 				  <div class="login-title">
            		<h4 class="title">Editar Empresa</h4>
 				<div id="loginbox" class="loginbox">
-					<form action="../controllers/empresas.php" method="POST" name="login" id="login-form">
+					<form action="" method="POST"  id="editform">
 					  <fieldset class="input">
 					    <p id="login-form-username">
 					      <label for="modlgn_username">Empresa</label>
 						  
 						   <!-- cargar lista de empresas-->
-					      <select id="lempresa" name="listaempresa" onchange="ActualizarCampos()" class="frm-field required">
-								<? echo $listaempresas; ?>
-							</select>
+					      <select id="idempresa" name="idempresa"  class="frm-field required">
+								<option value="0">Seleccione una empresa..</option>
+								<script>
+									listaempresas();
+								</script>
+						  </select>
 					    </p>
 						<p id="nombre">
 					      <label for="modlgn_username">Nombre Empresa</label>
-					      <input id="emp_nombre" type="text" name="empresa" class="inputbox" size="18" autocomplete="off">
+					      <input id="emp_nombre" type="text" name="emp_nombre" class="inputbox" size="18" autocomplete="off">
 					    </p>
 						
 						<p id="telefono">
 					      <label for="modlgn_username">Teléfono</label>
-					      <input id="m_telefono" type="text" name="telefono" class="inputbox" size="18" autocomplete="off">
+					      <input id="emp_telefono" type="text" name="emp_telefono" class="inputbox" size="18" autocomplete="off">
 					    </p>
 					    
 					    <input type="submit" name="Submit"  value="Editar">

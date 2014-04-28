@@ -1,4 +1,7 @@
-
+<?php
+	include '../controllers/sesion.php';
+	check_loginEmpresa();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -64,10 +67,7 @@
 								<option value="AX">Ejemplo borrar</option>
 								<option value="AF">Ejemplo2</option>
 							</select>
-							
-							
 					    </p>
-						
 					    <input type="submit" name="Submit"  value="Eliminar">
 					  </fieldset>
 					 </form>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -44,7 +43,7 @@ jQuery(function() {
 		  <div class="content-box-right">
 				
 				<div class="get_btn">
-					<a href="views/login.php">Iniciar Sesiòn</a>
+					<a href="login.php">Iniciar Sesiòn</a>
 				</div>
 			</div>		
 		 </div>

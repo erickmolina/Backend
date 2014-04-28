@@ -1,4 +1,7 @@
-
+<?php
+	include '../controllers/sesion.php';
+	check_login();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>

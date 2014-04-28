@@ -1,4 +1,7 @@
-
+<?php
+	include '../controllers/sesion.php';
+	check_loginEmpresa();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -43,7 +46,7 @@
 		   
 		   
 	     <div class="clear"></div>
-		<h2 class="head">Aplicación para <span class="m_1"> </span>encontrar <span class="m_1">tu mejor ruta</span></h2>
+
      </div>
     </div>
   <div class="main">
@@ -64,8 +67,6 @@
 								<option value="AX">Ejemplo borrar</option>
 								<option value="AF">Ejemplo2</option>
 							</select>
-							
-						
 					    </p>
 						<p id="nombre">
 					      <label for="modlgn_username">Indentificador</label>

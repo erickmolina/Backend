@@ -59,7 +59,7 @@
 		   
 		   
 	     <div class="clear"></div>
-		<h2 class="head">Aplicación para <span class="m_1"> </span>encontrar <span class="m_1">tu mejor ruta</span></h2>
+		
      </div>
     </div>
      
@@ -85,7 +85,7 @@
 					   <div class="section group example">
 					   
 					   
-						<div class="col_1_of_3 span_1_of_3">
+						<div class="col_1_of_3">
 						   <ul>
 							 <li>
 								<div class="buttonsType">
@@ -97,7 +97,7 @@
 							 </li>
 						   </ul>
 		 				</div>
-						<div class="col_1_of_3 span_1_of_3">
+						<div class="col_1_of_3">
 						  <ul>
 							 <li><div class="get_btnType">
 									<a href="empresaAgregar.php">Agregar</a>
@@ -105,7 +105,7 @@
 							</li>
 						  </ul>
 						</div>
-						<div class="col_1_of_3 span_1_of_3">
+						<div class="col_1_of_3">
 						  <ul>
 							 <li><div class="get_btnType">
 									<a href="empresaEliminar.php">Eliminar</a>
@@ -113,8 +113,17 @@
 							</li>
 						  </ul>
 						</div>
+						<div class="col_1_of_3">
+						  <ul>
+							 <li><div class="get_btnType">
+									<a href="empresaVer.php">Ver</a>
+								</div>
+							</li>
+						  </ul>
+						</div>
 						<div class="clear"></div>
 					</div>
+					   
 					   
 				</div>
 				
@@ -133,7 +142,7 @@
 					   <div class="section group example">
 					   
 					   
-						<div class="col_1_of_3 span_1_of_3">
+						<div class="col_1_of_3 ">
 						   <ul>
 							 <li>
 								<div class="buttonsType">
@@ -145,7 +154,7 @@
 							 </li>
 						   </ul>
 		 				</div>
-						<div class="col_1_of_3 span_1_of_3">
+						<div class="col_1_of_3">
 						  <ul>
 							 <li><div class="get_btnType">
 									<a href="paradaAgregarAdmin.php">Agregar</a>
@@ -153,10 +162,19 @@
 							</li>
 						  </ul>
 						</div>
-						<div class="col_1_of_3 span_1_of_3">
+						<div class="col_1_of_3">
 						  <ul>
 							 <li><div class="get_btnType">
 									<a href="paradaEliminarAdmin.php">Eliminar</a>
+								</div>
+							</li>
+						  </ul>
+						</div>
+
+						<div class="col_1_of_3">
+						  <ul>
+							 <li><div class="get_btnType">
+									<a href="paradaVerAdmin.php">Ver</a>
 								</div>
 							</li>
 						  </ul>
@@ -179,7 +197,7 @@
 						</div>
 					  
 					   <div class="section group example">
-					   	<div class="col_1_of_3 span_1_of_3">
+					   	<div class="col_1_of_3 ">
 						   <ul>
 							 <li>
 								<div class="buttonsType">
@@ -191,7 +209,7 @@
 							 </li>
 						   </ul>
 		 				</div>
-						<div class="col_1_of_3 span_1_of_3">
+						<div class="col_1_of_3 ">
 						  <ul>
 							 <li><div class="get_btnType">
 									<a href="rutaAgregarAdmin.php">Agregar</a>
@@ -199,7 +217,7 @@
 							</li>
 						  </ul>
 						</div>
-						<div class="col_1_of_3 span_1_of_3">
+						<div class="col_1_of_3">
 						  <ul>
 							 <li><div class="get_btnType">
 									<a href="rutaEliminarAdmin.php">Eliminar</a>
@@ -207,6 +225,16 @@
 							</li>
 						  </ul>
 						</div>
+
+						<div class="col_1_of_3">
+						  <ul>
+							 <li><div class="get_btnType">
+									<a href="rutaVerAdmin.php">Ver</a>
+								</div>
+							</li>
+						  </ul>
+						</div>
+
 						<div class="clear"></div>
 					</div>
 					   
@@ -214,9 +242,119 @@
 			
 			
 			
-			<!--Seccion de otros 3-->
+			<!--Otra fila de servicios-->
 			
 			<div class="section group">
+
+
+				<!--Primer contenido -->
+				
+
+				<div class="col_1_of_3 span_1_of_3">
+					<img src=" images/horario.png" alt=""/>
+					
+					  <div class="desc">
+						<h3><a href="#">Horarios</a></h3>
+					   </div>
+					   <div class="section group example">
+					   <div class="col_1_of_3">
+						   <ul>
+							 <li>
+								<div class="buttonsType">
+								<div class="get_btnType">
+									<a href="horarioEditarAdmin.php">Editar</a>
+								</div>
+								</div>
+								
+							 </li>
+						   </ul>
+		 				</div>
+						<div class="col_1_of_3">
+						  <ul>
+							 <li><div class="get_btnType">
+									<a href="horarioAgregarAdmin.php">Agregar</a>
+								</div>
+							</li>
+						  </ul>
+						</div>
+						<div class="col_1_of_3">
+						  <ul>
+							 <li><div class="get_btnType">
+									<a href="horarioEliminarAdmin.php">Eliminar</a>
+								</div>
+							</li>
+						  </ul>
+						</div>
+						
+						<div class="col_1_of_3">
+						  <ul>
+							 <li><div class="get_btnType">
+									<a href="horarioVerAdmin.php">Ver</a>
+								</div>
+							</li>
+						  </ul>
+						</div>
+						
+						<div class="clear"></div>
+		    		  </div>
+				</div>
+
+
+
+				<!--Primer contenido -->
+				
+
+				<div class="col_1_of_3 span_1_of_3">
+					<img src=" images/usuario.png" alt=""/>
+					
+					  <div class="desc">
+						<h3><a href="#">Usuarios</a></h3>
+					   </div>
+					   <div class="section group example">
+					   <div class="col_1_of_3">
+						   <ul>
+							 <li>
+								<div class="buttonsType">
+								<div class="get_btnType">
+									<a href="usuarioEditarAdmin.php">Editar</a>
+								</div>
+								</div>
+								
+							 </li>
+						   </ul>
+		 				</div>
+						<div class="col_1_of_3">
+						  <ul>
+							 <li><div class="get_btnType">
+									<a href="usuarioAgregarAdmin.php">Agregar</a>
+								</div>
+							</li>
+						  </ul>
+						</div>
+						<div class="col_1_of_3">
+						  <ul>
+							 <li><div class="get_btnType">
+									<a href="usuarioEliminarAdmin.php">Eliminar</a>
+								</div>
+							</li>
+						  </ul>
+						</div>
+						
+						<div class="col_1_of_3">
+						  <ul>
+							 <li><div class="get_btnType">
+									<a href="usuarioVerAdmin.php">Ver</a>
+								</div>
+							</li>
+						  </ul>
+						</div>
+						
+						<div class="clear"></div>
+		    		  </div>
+				</div>
+
+
+				<!--Segundo contenido -->
 				
 				
 				<div class="col_1_of_3 span_1_of_3">
@@ -226,7 +364,7 @@
 						<h3><a href="#">Unidades</a></h3>
 					   </div>
 					   <div class="section group example">
-					   <div class="col_1_of_3 span_1_of_3">
+					   <div class="col_1_of_3">
 						   <ul>
 							 <li>
 								<div class="buttonsType">
@@ -238,7 +376,7 @@
 							 </li>
 						   </ul>
 		 				</div>
-						<div class="col_1_of_3 span_1_of_3">
+						<div class="col_1_of_3">
 						  <ul>
 							 <li><div class="get_btnType">
 									<a href="unidadesAgregarAdmin.php">Agregar</a>
@@ -246,7 +384,7 @@
 							</li>
 						  </ul>
 						</div>
-						<div class="col_1_of_3 span_1_of_3">
+						<div class="col_1_of_3">
 						  <ul>
 							 <li><div class="get_btnType">
 									<a href="unidadesEliminarAdmin.php">Eliminar</a>
@@ -255,7 +393,14 @@
 						  </ul>
 						</div>
 						
-						
+						<div class="col_1_of_3">
+						  <ul>
+							 <li><div class="get_btnType">
+									<a href="unidadesVerAdmin.php">Ver</a>
+								</div>
+							</li>
+						  </ul>
+						</div>
 						
 						<div class="clear"></div>
 		    		  </div>

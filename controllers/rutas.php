@@ -1,27 +1,25 @@
 <?php
 	require_once '../models/funcionesRuta.php';
-	require_once '../controllers/sesion.php';
+	require_once 'sesion.php';
 	
 	if(isset($_GET['tag']) && ($_GET['tag'] == 'obtenerListaRutas'))
 	{	
 		$response = obtenerListaRutas();
 		echo json_encode($response);
 	}
-	else if (isset($_POST['listaempresa']) && isset($_POST['descipcion']) && isset($_POST['tarifa']))
+	else if(isset($_POST['listaempresa']) && isset($_POST['descipcion']) && isset($_POST['tarifa']))
+	//else if(isset($_POST['add']))
 	{
-		$result = insertarRuta($_POST['listaempresa'],$_POST['descipcion'],$_POST['tarifa']);
-		if(result== 0){
-			header('Location: ../views/rutaAgregarAdmin.php');
+		$response = insertarRuta($_POST['listaempresa'],$_POST['descipcion'],$_POST['tarifa']);
+		if($response == 0){
+			echo "1";
 		}
 		else{
-			echo "No se pudo insertar";
+			echo "0";
 		}
 	}
 	else
 	{
-		$response = array();
-		$response["success"] = 0;
-		$response["message"] = "Peticion Invalida o Faltan parametros";
-		echo json_encode($response);
+		echo "-1";
 	}
 ?>

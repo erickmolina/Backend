@@ -1,4 +1,7 @@
-
+<?php
+	include '../controllers/sesion.php';
+	check_loginEmpresa();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -72,12 +75,6 @@
 							</select>
 		
 					    </p>
-						
-						
-						
-						
-						
-					   
 					    
 					    <input type="submit" name="Submit"  value="Eliminar">
 					  </fieldset>

@@ -10,7 +10,7 @@ function check_login(){
 	}
 }
 function check_loginEmpresa(){
-	if (!isset ($_SESSION['uid']) || !$_SESSION['uid'] || !isset ($_SESSION['idEmpresa']) || !$_SESSION['idEmpresa'] ) {
+	if ( !isset ($_SESSION['idEmpresa']) || !$_SESSION['idEmpresa'] ) {
     /* Si la cookie no esta definida se redirige a la pagina login */
     header('Location: ../views/login.php');
 	}

@@ -1,4 +1,7 @@
-
+<?php
+	include '../controllers/sesion.php';
+	check_login();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -43,7 +46,6 @@
 		   
 		   
 	     <div class="clear"></div>
-		<h2 class="head">Aplicación para <span class="m_1"> </span>encontrar <span class="m_1">tu mejor ruta</span></h2>
      </div>
     </div>
   <div class="main">

@@ -1,4 +1,7 @@
-
+<?php
+	include '../controllers/sesion.php';
+	check_login();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -70,8 +73,6 @@
 								<option value="AX">Ejemplo borrar</option>
 								<option value="AF">Ejemplo2</option>
 							</select>
-							
-						
 					    </p>
 						<p id="nombre">
 					      <label for="modlgn_username">Indentificador</label>

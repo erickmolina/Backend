@@ -7,6 +7,10 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+<script src="js/jquery-1.7.2.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/login.js"></script>
+
 </head>
 <body>
  <div class="header-top">
@@ -37,24 +41,24 @@
      <div class="wrap">
       	 <div class="section group">
 				<div class="cont span_2_of_blog">
-				  <div class="login-title">
+				<div class="login-title">
            		<h4 class="title">Iniciar Sesión</h4>
 				<div id="loginbox" class="loginbox">
-					<form action="../controllers/general.php" method="POST" name="login" id="login-form">
+					<form action="" method="POST" id="loginform">
 					  <fieldset class="input">
 					    <p id="login-form-username">
 					      <label for="modlgn_username">Usuario</label>
-					      <input id="modlgn_username" type="text" name="usuario" class="inputbox" size="18" autocomplete="off">
+					      <input id="usuario" type="text" name="usuario" class="inputbox" size="18" autocomplete="off">
 					    </p>
 					    <p id="login-form-password">
 					      <label for="modlgn_passwd">Contrasena</label>
-					      <input id="modlgn_passwd" type="password" name="clave" class="inputbox" size="18" autocomplete="off">
+					      <input id="clave" type="password" name="clave" class="inputbox" size="18" autocomplete="off">
 					    </p>
 					    <p id="login-form-remember">
 					      <label for="modlgn_remember" class="checkbox">Empresa</label>
 					      <input id="modlgn_remember" type="radio" name="opcion" class="checkbox" value="userEmp" autocomplete="off">
 						  <label for="modlgn_remember" class="checkbox">Administrador</label>
-					      <input id="modlgn_remember" type="radio" name="opcion" class="checkbox" value="userAdmin" autocomplete="off">
+					      <input id="modlgn_remember" type="radio" name="opcion" class="checkbox" value="userAdmin" checked>
 					    </p>
 					    <input type="submit" name="Submit"  value="Login">
 					  </fieldset>

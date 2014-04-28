@@ -1,4 +1,7 @@
-
+<?php
+	include '../controllers/sesion.php';
+	check_login();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -43,7 +46,6 @@
 		   
 		   
 	     <div class="clear"></div>
-		<h2 class="head">Aplicación para <span class="m_1"> </span>encontrar <span class="m_1">tu mejor ruta</span></h2>
      </div>
     </div>
   <div class="main">
@@ -51,7 +53,7 @@
       	 <div class="section group">
 				<div class="cont span_2_of_blog">
 				  <div class="login-title">
-           		<h4 class="title">Agregar Paradas</h4>
+           		<h4 class="title">Agregar Parada</h4>
 				<div id="loginbox" class="loginbox">
 					<form action="" method="post" name="login" id="login-form">
 					  <fieldset class="input">
@@ -72,9 +74,14 @@
 							</select>
 		
 					    </p>
-						<p id="Informacio">
+						<p id="nombre">
 					      <label for="modlgn_username">Información</label>
 					      <input id="modlgn_informacion" type="text" name="informacion" class="inputbox" size="18" autocomplete="off">
+					    </p>
+						 
+						<p id="nombre">
+					      <label for="modlgn_username">Detalle</label>
+					      <input id="modlgn_lingitud" type="text" name="detalle" class="inputbox" size="18" autocomplete="off">
 					    </p>
 						<p id="nombre">
 					      <label for="modlgn_username">Longitud</label>

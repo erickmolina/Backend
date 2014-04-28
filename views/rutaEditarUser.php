@@ -1,4 +1,7 @@
-
+<?php
+	include '../controllers/sesion.php';
+	check_loginEmpresa();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -56,19 +59,15 @@
 					<form action="" method="post" name="login" id="login-form">
 					  <fieldset class="input">
 					    <p id="login-form-username">
-					      <label for="modlgn_username">Empresa</label>
-						  
 					      
-							
 							<label for="modlgn_username">Ruta</label>
 							<select id="ruta" name="ruta" onchange="change_country(this.value)" class="frm-field required">
 								<option value="null">Seleccione la ruta</option>         
 								<option value="AX">Ejemplo borrar</option>
 								<option value="AF">Ejemplo2</option>
 							</select>
-							
-							
 					    </p>
+
 						<p id="nombre">
 					      <label for="modlgn_username">Descipción</label>
 					      <input id="modlgn_descipcion" type="text" name="descipcion" class="inputbox" size="18" autocomplete="off">

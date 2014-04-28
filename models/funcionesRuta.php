@@ -11,13 +11,12 @@
 	{
 		$response = array();
 		$conexion = abrirConexion();
-		$query = "CALL SP_MostrarRutas";
+		$query = "CALL SP_ListaRutas";
 		$result = mysqli_query($conexion,$query) or die(mysqli_error());
 		// check for empty result
 		if (mysqli_num_rows($result) > 0) 
 		{
 			$response["Rutas"] = array();
-		 
 			while ($row = mysqli_fetch_array($result)) 
 			{
 				// temp user array
@@ -52,6 +51,4 @@
 		cerrarConexion();
 		return $response;
 	}
-	
-
 ?>

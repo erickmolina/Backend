@@ -8,7 +8,7 @@
 	* Salidas:
 	* Reestricciones:
 	*/
-	function obtenerHorario($Nombre_Ruta)
+	function obtenerHorarioRuta($Nombre_Ruta)
 	{
 		$response = array();
 		$conexion = abrirConexion();
@@ -19,8 +19,10 @@
 		 
 			while ($row = mysqli_fetch_array($result)) {
 				$horario = array();
-				$horario["Dias"] = $row["Dias"];
-				$horario["HoraSalida"] = $row["HoraSalida"];
+				$horario["Dia"] = $row["Dia"];
+				$horario["HoraInicio"] = $row["HoraInicio"];
+				$horario["HoraFinal"] = $row["HoraFinal"];
+				$horario["RangoSalida"] = $row["RangoSalida"];
 				$horario["Tarifa"] = $row["Tarifa"];
 				
 				// guarda el horario en el arreglo

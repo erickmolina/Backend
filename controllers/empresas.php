@@ -5,39 +5,45 @@
 	if(isset($_POST['empresa']) && isset($_POST['telefono']) && isset($_POST['usuario']) && isset($_POST['correo']) && isset($_POST['clave']))
 	{
 		$result = insertarEmpresaUsuario($_POST['empresa'],$_POST['telefono'],$_POST['usuario'],$_POST['clave'],$_POST['correo']);
-		if(result== 0){
-			header('Location: ../views/empresaAgregar.php');
+		if($result== 0){
+			echo "1";
 		}
 		else{
-			echo "No se pudo insertar";
+			echo "0";
 		}
 	}
-	else if(isset($_POST['listaempresa']) && isset($_POST['empresa']) && isset($_POST['telefono']))
+	else if(isset($_POST['idempresa']) && isset($_POST['nombre_emp']) && isset($_POST['tel_emp']))
 	{
-		$result = actualizarEmpresa($_POST['listaempresa'],$_POST['empresa'],$_POST['telefono']);
-		if(result !=1)
+		$result = actualizarEmpresa($_POST['idempresa'],$_POST['nombre_emp'],$_POST['tel_emp']);
+		if($result ==1)
 		{
-			header('Location: ../views/empresaEditar.php');
+			echo "1";
 		}
 		else
 		{
-			echo "No se pudo actualizar";
+			echo "0";
 		}
 	}
-	else
+	else if(isset($_GET['data']) && isset($_GET['idempresa']) )
 	{
-		echo "Faltan Parametros";
+		$result = getDatosEmpresa($_GET['idempresa']);
+		echo json_encode($result);
 	}
 	
-	function listaEmpresas()
+	else if(isset($_GET['list']))
 	{
 		$result = obtenerlistaEmpresas();
-		return $result;
+		echo $result;
 	}
 	
-	function cargarDatosEmpresa($idempresa)
+	else if(isset($_GET['ver']))
 	{
-		$result = obtenerdatosEmpresa($idempresa);
-		return $result;
+		$result = verDatosEmpresas();
+		echo $result;
+	}
+	
+	else
+	{
+		echo "-1";
 	}
 ?>

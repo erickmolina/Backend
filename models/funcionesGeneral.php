@@ -17,6 +17,7 @@
 		{
 			$response = 1;
 		}
+		
 		cerrarConexion();
 		return $response;
 	}

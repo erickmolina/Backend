@@ -6,39 +6,36 @@
 	{
 		if($_POST['opcion'] =="userEmp")
 		{
-			$uid = loginempresa($_POST['usuario'],$_POST['clave']);
-			if($uid != 0)
+			$idEmpresa = loginempresa($_POST['usuario'],$_POST['clave']);
+			if($idEmpresa  != 0)
 			{
-				$_SESSION['uid'] = $uid;
-				header('Location: ../views/indexEmpresa.php');
+				$_SESSION['idEmpresa'] =$idEmpresa;
+				echo "2";
 			}
 			else
 			{
-				header('Location: ../views/login.php');
+				echo "0";
 			}
 		}
 		else if($_POST['opcion'] =="userAdmin")
 		{
-			$idEmpresa = loginadmin($_POST['usuario'],$_POST['clave']);
-			$uid = 4;
-			if($idEmpresa != 0){
-				$_SESSION['idEmpresa'] =$idEmpresa;
+			$uid= loginadmin($_POST['usuario'],$_POST['clave']);
+			if($uid != 0){
 				$_SESSION['uid'] = $uid;
-				header('Location: ../views/indexAdmin.php');
+				echo "1";
 			}
 			else
 			{
-				
-				header('Location: ../views/login.php');
+				echo "0";
 			}
 		}
 		else
 		{
-			header('Location: ../views/login.php');
+			echo "-5";
 		}
 	}
 	else
 	{
-		echo "Faltan Parametros";
+		echo "-1";
 	}
 ?>

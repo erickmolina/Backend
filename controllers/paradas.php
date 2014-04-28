@@ -2,9 +2,14 @@
 	require_once '../models/funcionesParada.php';
 	//include ("funcionesParada.php");
 	
-	if(isset($_GET['tag']) && ($_GET['tag'] == 'obtenerParadas'))
+	if(isset($_GET['tag']) && ($_GET['tag'] == 'obtenerParadasRuta'))
 	{	
-		$response = obtenerParadas($_GET['Nombre_Ruta']);
+		$response = obtenerParadasRuta($_GET['Nombre_Ruta']);
+		echo json_encode($response);
+	}
+	else if(isset($_GET['tag']) && ($_GET['tag'] == 'getAllParadas'))
+	{	
+		$response = getAllParadas();
 		echo json_encode($response);
 	}
 	else

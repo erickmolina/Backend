@@ -1,4 +1,7 @@
-
+<?php
+	include '../controllers/sesion.php';
+	check_login();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -8,6 +11,10 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+<script src="js/jquery-1.7.2.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/rutas.js"></script>
+
 </head>
 <body>
  <div class="header-top">
@@ -53,26 +60,26 @@
 				  <div class="login-title">
            		<h4 class="title">Editar Ruta</h4>
 				<div id="loginbox" class="loginbox">
-					<form action="" method="post" name="login" id="login-form">
+					<form action="" method="post" name="editform" id="editform">
 					  <fieldset class="input">
 					    <p id="login-form-username">
 					      <label for="modlgn_username">Empresa</label>
 						  
-					      <select id="empresa" name="empresa" onchange="change_country(this.value)" class="frm-field required">
-								<option value="null">Seleccione la empresa</option>         
-								<option value="AX">Ejemplo borrar</option>
-								<option value="AF">Ejemplo2</option>
+					      <select id="idempresa" name="idempresa"  class="frm-field required">
+								<option value="0">Seleccione una empresa..</option>         
+								<script>
+									listaempresas();
+								</script>
 							</select>
 							
 							<label for="modlgn_username">Ruta</label>
-							<select id="ruta" name="ruta" onchange="change_country(this.value)" class="frm-field required">
-								<option value="null">Seleccione la ruta</option>         
-								<option value="AX">Ejemplo borrar</option>
-								<option value="AF">Ejemplo2</option>
+							<select id="ruta" name="ruta" class="frm-field required">
+								<option value="0">Seleccione la ruta</option>         
+								
 							</select>
 							
 					    </p>
-						
+
 						<p id="nombre">
 					      <label for="modlgn_username">Descipción</label>
 					      <input id="modlgn_descipcion" type="text" name="descipcion" class="inputbox" size="18" autocomplete="off">

@@ -1,19 +1,13 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Free Steam Website Template | Pricing :: w3layouts</title>
+<title>Work</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
-<script src="s/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <script type="text/javascript">
 		jQuery(document).ready(function($) {
 			$(".scroll").click(function(event){		
@@ -48,7 +42,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		  <div class="content-box-right">
 				
 				<div class="get_btn">
-					<a href="views/login.php">Iniciar Sesiòn</a>
+					<a href="login.php">Iniciar Sesiòn</a>
 				</div>
 			</div>		
 		 </div>
@@ -62,7 +56,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="main">
      	<div class="wrap">
      		<h2 class="head1">Acerca del proyecto</h2>
-     		<p class="m_5">Se crea este sitio y la apkicación para mejorar el servicio público haciendo más comodo la información, así como interactuar con la empresa</p>
+     		<p class="m_5">Se crea este sitio y la aplicación para mejorar el servicio público haciendo más comodo la información, así como interactuar con la empresa</p>
      		<section>
 				
 			</section>

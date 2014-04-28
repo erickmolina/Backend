@@ -1,4 +1,7 @@
-
+<?php
+	include '../controllers/sesion.php';
+	check_loginEmpresa();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -39,8 +42,6 @@
 					<a href="logout.php">Cerrar Sesion</a>
 				</div>
 		   </div>
-		   
-		   
 		   
 	     <div class="clear"></div>
 		<h2 class="head">Aplicación para <span class="m_1"> </span>encontrar <span class="m_1">tu mejor ruta</span></h2>

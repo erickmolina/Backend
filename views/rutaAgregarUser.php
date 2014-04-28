@@ -1,3 +1,7 @@
+<?php
+	include '../controllers/sesion.php';
+	check_loginEmpresa();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -42,7 +46,6 @@
 		   
 		   
 	     <div class="clear"></div>
-		<h2 class="head">Aplicación para <span class="m_1"> </span>encontrar <span class="m_1">tu mejor ruta</span></h2>
      </div>
     </div>
   <div class="main">
@@ -54,7 +57,13 @@
 				<div id="loginbox" class="loginbox">
 					<form action="" method="post" name="login" id="login-form">
 					  <fieldset class="input">
-					   
+						<p id="login-form-username">
+					      <label for="modlgn_username">Empresa</label>
+						  
+					      <select id="empresa" name="listaempresa" onchange="change_country(this.value)" class="frm-field required">
+								
+						</select>
+						</p>
 						<p id="nombre">
 					      <label for="modlgn_username">Descipción</label>
 					      <input id="modlgn_descipcion" type="text" name="descipcion" class="inputbox" size="18" autocomplete="off">
@@ -64,6 +73,7 @@
 					      <label for="modlgn_username">Tarifa</label>
 					      <input id="modlgn_tarifa" type="text" name="tarifa" class="inputbox" size="18" autocomplete="off">
 					    </p>
+
 						
 					    <input type="submit" name="Submit"  value="Agregar">
 					  </fieldset>

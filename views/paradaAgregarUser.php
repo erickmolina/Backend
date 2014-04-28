@@ -1,4 +1,7 @@
-
+<?php
+	include '../controllers/sesion.php';
+	check_loginEmpresa();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -43,7 +46,6 @@
 		   
 		   
 	     <div class="clear"></div>
-		<h2 class="head">Aplicación para <span class="m_1"> </span>encontrar <span class="m_1">tu mejor ruta</span></h2>
      </div>
     </div>
   <div class="main">
@@ -66,9 +68,14 @@
 							</select>
 		
 					    </p>
-						<p id="Informacio">
+						<p id="nombre">
 					      <label for="modlgn_username">Información</label>
 					      <input id="modlgn_informacion" type="text" name="informacion" class="inputbox" size="18" autocomplete="off">
+					    </p>
+						 
+						<p id="nombre">
+					      <label for="modlgn_username">Detalle</label>
+					      <input id="modlgn_lingitud" type="text" name="detalle" class="inputbox" size="18" autocomplete="off">
 					    </p>
 						<p id="nombre">
 					      <label for="modlgn_username">Longitud</label>
@@ -79,12 +86,7 @@
 					      <label for="modlgn_username">Latitud</label>
 					      <input id="modlgn_latitud" type="text" name="latitud" class="inputbox" size="18" autocomplete="off">
 					    </p>
-						
-						
-						
-						
-					   
-					    
+							    
 					    <input type="submit" name="Submit"  value="Editar">
 					  </fieldset>
 					 </form>
